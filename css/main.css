@@ -27,10 +27,6 @@ body {
     outline-offset: 5px;
 }
 
-h1, h2, h3 {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-}
-
 li {
     list-style: none;
 }
@@ -51,10 +47,10 @@ a {
 
 /* SITE-LOGO */
 .site-logo {
+    margin-right: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: auto;
     transition: opacity 0.4s ease;
 }
 
@@ -88,21 +84,21 @@ a {
 
 /* SITE-BUTTON */
 .orange-button {
+    padding: 12px 24px;
+    border-radius: 4px;
     color: #fff;
     font-size: 13px;
     font-weight: 700;
-    padding: 12px 24px;
     display: inline-block;
-    border-radius: 4px;
     background-color: #ff7500;
 }
 
 
 /* SITE-HEADER */
 .header {
-    border-top: 5px solid #ff7500;
     padding-top: 16px;
     padding-bottom: 16px;
+    border-top: 5px solid #ff7500;
 }
 
 .header-container {
@@ -113,18 +109,15 @@ a {
 
 /* SITENAV */
 .sitenav-list {
+    padding: 0;
+    margin: 0;
+    margin-right: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.sitenav-list {
-    padding: 0;
-    margin: 0;
-    margin-right: 32px;
-}
-
-.sitenav-item {
+.sitenav-link {
     cursor: pointer;
     color: #000;
     font-size: 13px;
@@ -134,12 +127,12 @@ a {
     transition: color 0.4s ease, opacity 0.4s ease;
 }
 
-.sitenav-item:not(:last-child) {
-    margin-right: 32px;
+.sitenav-link:hover {
+    color: #ff7500;
 }
 
-.sitenav-item:hover {
-    color: #ff7500;
+.sitenav-item:not(:last-child) {
+    margin-right: 32px;
 }
 
 .sitenav-item:active {
@@ -151,6 +144,7 @@ a {
 .hero {
     padding-top: 80px;
     padding-bottom: 80px;
+    color: #fff;
     background-color: #252420;
 }
 
@@ -160,15 +154,14 @@ a {
     align-items: center;
 }
 
-.hero-left-content {
+.hero-text-content {
     width: 390px;
 }
 
 .hero-title {
-    color: #fff;
-    font-size: 40px;
     margin-top: 0;
     margin-bottom: 24px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.5px;
@@ -183,7 +176,6 @@ a {
 }
 
 .hero-subtitle {
-    color: #fff;
     margin-top: 0;
     margin-bottom: 32px;
     line-height: 1.5;
@@ -198,17 +190,17 @@ a {
 }
 
 .feature-title {
-    width: 435px;
-    font-size: 72px;
     margin-top: 0;
     margin-bottom: 72px;
+    text-align: left;
+    font-size: 72px;
 }
 
 .feature-list {
-    display: flex;
-    align-items: flex-start;
     padding: 0;
     margin: 0;
+    display: flex;
+    align-items: flex-start;
 }
 
 .feature-list h3, p {
@@ -221,11 +213,10 @@ a {
 
 .feature-item {
     width: 340px;
-    margin-right: 40px;
 }
 
-.feature-item:last-child {
-    margin-right: 0;
+.feature-item:not(:last-child) {
+    margin-right: 40px;
 }
 
 .feature-list h3 {
@@ -294,7 +285,7 @@ a {
     margin-bottom: 12px;
 }
 
-.sale-left-wrapper {
+.sale-text-wrapper {
     margin-bottom: 24px;
 }
 
@@ -305,11 +296,11 @@ a {
     border-radius: 12px;
 }
 
-.sale-left-content {
+.sale-text-content {
     width: 440px;
 }
 
-.sale-left-content span {
+.sale-text-content span {
     color: #ff7500;
     font-weight: 700;
 }
@@ -359,9 +350,9 @@ a {
 }
 
 .footer-line {
-    height: 2px;
     border: 0;
     margin: 0;
+    height: 2px;
     margin-top: 40px;
     margin-bottom: 64px;
     background: rgba(37, 36, 32, 0.50);
@@ -369,26 +360,30 @@ a {
 
 .footer-bottom {
     display: flex;
+    align-items: self-start;
 }
 
 .footer-bottom-list {
-    width: 224px;
+    width: 25%;
     padding: 0;
     margin: 0;
 }
 
 .footer-bottom-list:not(:last-child) {
-    margin-right: 68px;
+    padding-right: 25px;
 }
 
 .footer-bottom-item {
     cursor: pointer;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-bottom-link {
     color: #252420;
     transition: color 0.4s ease;
 }
 
-.footer-bottom-item:hover {
+.footer-bottom-link:hover {
     color: #ff7500;
 }
 
