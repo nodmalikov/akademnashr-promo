@@ -39,7 +39,7 @@ body {
 
 *:focus {
     outline: 2px dashed var(--component-color);
-    outline-offset: 5px;
+    outline-offset: 2px;
 }
 
 img {
